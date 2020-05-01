@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OmaOpaShopList</string>
+    <string name="radio1">Oma</string>
+    <string name="radio2">Opa</string>
+    <string name="Ware">Ware</string>
+    <string name="wichtig">ganz wichtig</string>
+    <string name="WieViel">Wie Viel</string>
+    <string name="OK">Ok</string>
+    <string name="clear">Clear</string>
+    <string name="OmasList">Omas List</string>
+    <string name="OpasList">Opas List</string>
+    <string name="Einkaufsliste">Einkaufsliste</string>
+</resources>

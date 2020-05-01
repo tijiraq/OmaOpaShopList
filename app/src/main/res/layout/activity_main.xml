@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio1"
+            android:textSize="30sp"
+            android:layout_margin="20dp" />
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="30sp"
+            android:text="@string/radio2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text1"
+            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:textSize="30sp"
+            android:layout_height="100dp"
+            android:autofillHints="z.B. Toielletenpapier"
+            android:inputType="text"
+            android:hint="@string/Ware"
+            />
+
+        <EditText
+            android:id="@+id/text2"
+            android:hint="@string/WieViel"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:text="@string/wichtig"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:text="@string/OK"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:text="@string/clear"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text3"
+            android:text="@string/OmasList"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:text="@string/OpasList"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:text="@string/Einkaufsliste">
+
+    </Spinner>
+
+
+
+</LinearLayout>
