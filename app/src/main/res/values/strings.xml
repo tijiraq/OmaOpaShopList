@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">OmaOpaShopList</string>
+    <string name="app_Label">OmaOpa Einkaufliste</string>
     <string name="radio1">Oma</string>
     <string name="radio2">Opa</string>
     <string name="Ware">Ware</string>
