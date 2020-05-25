@@ -21,8 +21,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
     ArrayList<String> items = new ArrayList<>(); //Listspeicher
-    String[] input = new String[4]; //hilfsarray
     int omaszaehler = 0, opasZaehler = 0; //Listzaehler
+    ShopItem itemList=new ShopItem();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +48,8 @@ public class MainActivity extends Activity {
             int buttonId = group.getCheckedRadioButtonId();
             RadioButton button = (RadioButton) findViewById(buttonId);
             if(checkedId!=-1){ //falls eine von den beiden ausgewaehlt
-            String ausgabe = (String) button.getText().toString();
-            input[0] = ausgabe + ", "; //speichere den Radiotext in hilfsarray
+            String person = (String) button.getText().toString();
+            itemList.setPerson(person);
             }
         }
     }
@@ -57,9 +57,9 @@ public class MainActivity extends Activity {
     class MyCheckboxOnCheckedChangeListener implements CompoundButton.OnCheckedChangeListener {
         public void onCheckedChanged(CompoundButton button, boolean isChecked) {
             if (isChecked)
-                input[3] = ", ganz wichtig!";
+                itemList.setWichtig(true);
             else
-                input[3] = "";
+                itemList.setWichtig(false);
         }
     }
     //OK-Button Listener
@@ -73,15 +73,15 @@ public class MainActivity extends Activity {
             if((group.getCheckedRadioButtonId())==-1||ware.getText().toString().equals("")||wv.getText().toString().equals("")) //falls die Felder leer sind
                 Toast.makeText(getApplicationContext(), "empty fields!", Toast.LENGTH_LONG).show();
             else{
-                input[1] = ware.getText().toString() + ", ";
-                input[2] = wv.getText().toString();
-                for (int i = 0; i < 4; i++) //
-                    aus += input[i]; //alles von hilfsarray in den hilfsvar. speichern
+                itemList.setWare(ware.getText().toString());
+                itemList.setMenge(Integer.parseInt(wv.getText().toString()));
+               // for (int i = 0; i < 4; i++) //
+                 //   aus += input[i]; //alles von hilfsarray in den hilfsvar. speichern
 
-                if (input[0].contains("Oma")) { //falls in dem Item das "Oma" enthaelt, dann zaehlt der Omazahler hoch
+                if (itemList.getPerson().contains("Oma")) { //falls in dem Item das "Oma" enthaelt, dann zaehlt der Omazahler hoch
                     omaszaehler++;
                 }
-                else if (input[0].contains("Opa")) {//falls in dem Item das "Opa" enthaelt, dann zaehlt der Opazahler hoch
+                else if (itemList.getPerson().contains("Opa")) {//falls in dem Item das "Opa" enthaelt, dann zaehlt der Opazahler hoch
                     opasZaehler++;
                 }
                 Toast.makeText(getApplicationContext(), "added to the List", Toast.LENGTH_LONG).show();
@@ -89,7 +89,7 @@ public class MainActivity extends Activity {
                 oma.setText(omaSt.concat(Integer.toString(omaszaehler)));
                 TextView opa = findViewById(R.id.text4);//setze TextView fuer Opa
                 opa.setText(opaSt.concat(Integer.toString(opasZaehler)));
-                items.add(aus); //fuege in den Listspeicher
+                items.add(itemList.toString()); //fuege in den Listspeicher
             }
         }
     }
