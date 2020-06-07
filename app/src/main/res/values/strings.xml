@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">OmaOpaShopList</string>
-    <string name="app_Label">OmaOpa Einkaufliste</string>
+    <string name="app_Label">Oma und Opa Einkaufsliste</string>
     <string name="radio1">Oma</string>
     <string name="radio2">Opa</string>
     <string name="Ware">Ware</string>
@@ -11,4 +11,9 @@
     <string name="OmasList">Omas List: </string>
     <string name="OpasList">Opas List: </string>
     <string name="Einkaufsliste">Einkaufsliste</string>
+    <string name="showAll">alle anzeigen</string>
+    <string name="showOpa">Opas List anzeigen</string>
+    <string name="showOma">Omas List anzeigen</string>
+    <string name="createFile">Datei erstellen</string>
+    <string name="showFile">Datei anzeigen</string>
 </resources>

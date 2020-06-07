@@ -3,10 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:stretchColumns="*"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
-    <TableRow
-        android:paddingTop="10dp" >
+    <TableRow android:paddingTop="10dp">
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -28,73 +27,71 @@
         </RadioGroup>
     </TableRow>
 
-    <TableRow
-        android:paddingTop="10dp" >
+    <TableRow android:paddingTop="10dp">
 
         <EditText
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="text"
             android:hint="@string/Ware"
-            />
+            android:inputType="text" />
+
         <EditText
             android:id="@+id/text2"
-            android:hint="@string/WieViel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:hint="@string/WieViel"
+            android:inputType="number" />
 
     </TableRow>
 
-    <TableRow
-        android:paddingTop="10dp" >
+    <TableRow android:paddingTop="10dp">
 
         <CheckBox
             android:id="@+id/checkbox"
-            android:text="@string/wichtig"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/wichtig" />
 
     </TableRow>
 
-    <TableRow
-        android:paddingTop="10dp" >
+    <TableRow android:paddingTop="10dp">
 
         <Button
             android:id="@+id/button1"
-            android:text="@string/OK"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/OK" />
 
         <Button
             android:id="@+id/button2"
-            android:text="@string/clear"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/clear" />
 
     </TableRow>
-    <TableRow
-        android:paddingTop="10dp">
+
+    <TableRow android:paddingTop="10dp">
+
         <TextView
             android:id="@+id/text3"
-            android:text="@string/OmasList"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/OmasList" />
 
         <TextView
             android:id="@+id/text4"
-            android:text="@string/OpasList"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/OpasList" />
     </TableRow>
-    <TableRow
-        android:paddingTop="10dp">
+
+    <TableRow android:paddingTop="10dp">
+
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/Einkaufsliste">
-        </Spinner>
+            android:text="@string/Einkaufsliste"></Spinner>
     </TableRow>
 </TableLayout>

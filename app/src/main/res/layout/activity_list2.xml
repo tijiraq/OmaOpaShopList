@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context=".ListActivity">
+    <TableRow
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showAll"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/showOpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showOpa"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/showOma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showOma"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+
+    </TableRow>
+    <TableRow
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/createFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createFile"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/showFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showFile"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/ViewSQL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</TableLayout>

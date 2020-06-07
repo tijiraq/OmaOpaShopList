@@ -48,13 +48,16 @@ private boolean wichtig;
         this.wichtig = wichtig;
     }
     //------------------toString-----------------------------------------------
-    private String wichtigToString(){
+    public String wichtigToString(){
         if(this.wichtig)
-            return ", wichtig!";
+            return "wichtig";
         else
             return "";
     }
     public String toString(){
-        return this.person+", "+this.ware+", "+Integer.toString(this.menge)+wichtigToString();
+        if(this.wichtig)
+            return this.person+", "+this.ware+", "+Integer.toString(this.menge)+", "+wichtigToString();
+        else
+            return this.person+", "+this.ware+", "+Integer.toString(this.menge)+wichtigToString();
     }
 }
