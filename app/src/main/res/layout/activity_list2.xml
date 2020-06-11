@@ -54,7 +54,7 @@
     </TableRow>
 
     <TextView
-        android:id="@+id/ViewSQL"
+        android:id="@+id/ViewSQL1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="18sp"

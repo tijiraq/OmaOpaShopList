@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
         catch (Exception ex){ }
-       // finally {
-        //    db.close();
-       // }
+//        finally {
+//            db.close();
+//        }
 
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items); //Listspeicher mit dem Adapter binden
         RadioGroup group = findViewById(R.id.radioGroup); //Radiogroup Object
